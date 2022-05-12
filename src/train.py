@@ -41,5 +41,4 @@ if __name__ == "__main__":
     model.compile(optimizer = optimizer, loss = loss, metrics = metrics)
     model.fit(X_train, y_train, validation_data = (X_test, y_test), epochs = epochs)
     model.save("dlp_model")
-    print(classification_report(y_train, model.predict(X_train) >= 0.5))
-    print(classification_report(y_test, model.predict(X_test) >= 0.5))
+    print(classification_report(y, model.predict(X) >= 0.5))
