@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser">
+      <mime-exclude>image/jpeg</mime-exclude>
+      <parser-exclude class="org.apache.tika.parser.executable.ExecutableParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.BPGParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.ICNSParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.ImageParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.PSDParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.TiffParser"/>
+      <parser-exclude class="org.apache.tika.parser.image.WebPParser"/>
+    </parser>
+  </parsers>
+</properties>
