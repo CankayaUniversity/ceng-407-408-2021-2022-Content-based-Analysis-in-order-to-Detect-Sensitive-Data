@@ -1,0 +1,7 @@
+tika
+pyocr
+pdfrw
+Pillow
+requests
+tensorflow
+tensorflow-text
