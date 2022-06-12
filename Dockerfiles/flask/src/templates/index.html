@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<form action="/send_mail" method="POST">
+			{% for email, filename in email_info %}
+			<label for="email">Email: </label>
+			<textarea name="email" rows="25" cols="100">{{email}}</textarea>
+			<label for="filename">Allow Filename: </label>
+			<input type="submit" id="filename" name="filename" value="{{ filename }}">
+			{% endfor %}
+		</div>
+	</body>
+</html>
